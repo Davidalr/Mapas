@@ -7,91 +7,48 @@ body
   font-family: 'Roboto Condensed', sans-serif
   overflow-x: hidden
 .Header
-  margin: auto
   position: relative
-  max-width: rem(1040)
-  padding-top: rem(100)
-
-.Header-figure
-  top: rem(-135)
-  right: -9rem
-  max-width: rem(800)
-  position: absolute
-  svg
-    max-width: 100%
+  background: linear-gradient(to right, rgba(18,143,149,0) 0%,rgba(18,143,149,0) 80%,rgba(18,143,149,1) 20%,rgba(18,143,149,1) 100%)
+  img
+    display: block
+    margin: auto
+    position: relative
+    left: rem(60)
+    @include respond-to(middle)
+      left: rem(80)
+    @include respond-to(large)
+      left: rem(188)
 
 .Nav
-  border-bottom: rem(2) solid  #FFED00
-  padding: rem(65) 0 rem(14)
+  position: absolute
+  width: rem(500)
+  left: calc( 50vw - 250px)
+  top: rem(50)
+  font-size: rem(18)
   a
-    padding: rem(10) rem(16) rem(8)
-    &.current
-      background:  #FFED00
-  ul
-    width: 100%
-    @include respond-to(middle)
-      width: auto
-  li
-    margin: rem(20) auto
-    @include respond-to(middle)
-      margin:  auto
+    color: black
 
-.Home
-  article
-    text-align: center
-    padding: 0 1.5rem
-  h3
-    font-weight: 600
-    background: #FFED00
-    display: inline-block
-    text-align: justify
-    margin: rem(20) 0  rem(10)
-    font-size: rem(17 )
-  h4
-    text-align: justify
-    margin: 0
-  span
-    font-size: rem(13)
-  hr
-    margin: rem(20) 0
-.Home-p
-  text-align: justify
-  line-height: rem(22)
-  margin: 0
-.Home-prize
-  max-width: rem(300)
-  margin: auto
-.Home-categories
-  text-align: justify
-  margin-top: rem(20)
-.Date
-  padding: rem(20) 0
-  text-align: left
-  span
-    display: block
-    font-size: rem(15)
-  h3
-    font-weight: 400
-    background: #FFED00
-    display: inline-block
+.Nav-social
+  position: absolute
+  top: 50%
+  left: rem(20)
+  text-align: center
   li
-    @include respond-to(middle)
-      border-left: rem(1) solid
-      padding: 0 rem(12)
-    &:first-child
-      border-left: none
-      padding-left: 0
-    &:last-child
-      padding-right: 0
-.Footer
-  max-width: rem(1120)
-  border-top: rem(4) #FFED00 solid
-  margin: rem(30) auto 0
-  @include respond-to(large)
-    padding: rem(20) 0 rem(200)
-  padding: rem(20) 0
+    padding: rem(10)
+
+
+.Nav-footer
+  border-bottom: rem(10) #0F696D solid
+  min-width: 100%
+  height: rem(168)
   position: relative
-  overflow: hidden
+  a
+    color: white
+  ul
+    position: absolute
+    width: rem(500)
+    left: calc( 50vw - 250px)
+    top: 65%
 .Footer-figure
   display: none
   @include respond-to(large)
@@ -102,5 +59,43 @@ body
   left: 0
 .Footer-logos
   figure
-    padding: rem(20)
+    padding: rem(30)
+h2
+  font-size: rem(36)
+p
+  font-size: rem(20)
+  font-weight: 100
+  line-height: rem(28)
+
+h3
+  font-size: rem(32)
+  font-weight: 100
+
+main
+  margin: rem(60) auto
+
+table
+
+  td
+    padding-right: rem(20)
+.calendario
+  width: rem(500) !important
+
+  li
+    font-weight: 500
+    font-size: rem(22)
+    position: relative
+    span
+      color: rgba(18,143,149,1)
+      display: inline-block
+      margin-right: rem(10)
+    hr
+      margin: rem(12) 0
+      background: rgba(18,143,149,1)
+      border: none
+      position: absolute
+      left: -100%
+      width: calc(100% + 118px)
+      height: rem(2)
+
 
