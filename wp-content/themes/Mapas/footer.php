@@ -2,13 +2,14 @@
 
 <footer class="Footer row between center ">
     <figure class="Nav-footer">
-            <ul class="row between">
+        <?php wp_nav_menu( array( 'theme_location'> 'menuHeader' ) ); ?>
+        <!--<ul class="row between">
             <li><a href="">QUÉ ES MAPAS</a></li>
             <li><a href="">CALENDARIO</a></li>
             <li><a href="">SANTA CRUZ</a></li>
             <li><a href="">CONTACTO</a></li>
             <li><a href="">ES EN</a></li>
-        </ul>
+        </ul>-->
         <svg width="630px" height="168px" viewBox="400 397 630 168" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
             <polygon id="Page-1" stroke="none" fill="#0F696D" fill-rule="evenodd"
@@ -307,7 +308,17 @@
             </svg>
         </figure>
     </div>
-
+    <div class="Contact row middle center">
+        <div class="Contact-content">
+            <i id="Contact-close">X</i>
+            <?php echo do_shortcode('[contact-form-7 id="55" title="Contact form 1"]'); ?>
+            <div class="Contact-mail">
+                O puedes escribirle a... <br><br>
+                Información General MAPAS <br>
+                <a href="mailto:info@mapasmercadocultural.com">info@mapasmercadocultural.com</a>
+            </div>
+        </div>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 </body>
