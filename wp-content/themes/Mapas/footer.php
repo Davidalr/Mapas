@@ -17,12 +17,12 @@
         </svg>
     </figure>
     <div class="row middle Footer-logos col-12 small-12 center ">
-        <figure>
+   <!--     <figure>
 
             <svg width="315px" height="49px" viewBox="0 625 315 49" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
+
+
                 <defs>
                     <polygon id="path-1" points="0 47.6777 314.142 47.6777 314.142 -0.0003 0 -0.0003"></polygon>
                 </defs>
@@ -113,7 +113,7 @@
                         id="Fill-35" fill="#231F1F" mask="url(#mask-2)"></path>
                 </g>
             </svg>
-        </figure>
+        </figure>-->
         <figure>
             <svg width="298px" height="46px" viewBox="379 628 298 46" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -309,14 +309,14 @@
         </figure>
     </div>
     <div class="Contact row middle center">
-        <div class="Contact-content">
+        <div class="Contact-content small-12">
             <i id="Contact-close">X</i>
             <?php echo do_shortcode('[contact-form-7 id="55" title="Contact form 1"]'); ?>
-            <div class="Contact-mail">
+           <!-- <div class="Contact-mail">
                 O puedes escribirle a... <br><br>
                 Información General MAPAS <br>
                 <a href="mailto:info@mapasmercadocultural.com">info@mapasmercadocultural.com</a>
-            </div>
+            </div>-->
         </div>
     </div>
 </footer>

@@ -151,18 +151,24 @@ table
 .wpcf7-form-control-wrap textarea
   vertical-align: top
 .wpcf7-form
+  width: 90%
+  text-align: left
+  max-width: rem(500)
   margin: auto
-  width: rem(500)
   text-align: left
   label span
-    width: rem(100)
     display: inline-block
-    text-align: right
+
     margin-right: rem(20)
+    @include respond-to(medium)
+      text-align: right
   input
     border: none
     border-bottom: rem(1) solid
     background: none
+    width: 100%
+    @include respond-to(medium)
+      width: inherit
     &[type="submit"]
       border: none
       font-size: rem(22)
@@ -170,8 +176,8 @@ table
       padding: 0
   textarea
     background: none
-    max-height: rem(200)
-    max-width: rem(410)
+    width: 100%
+    height: rem(150)
 
 img.ajax-loader
   margin-left: rem(-6) !important
@@ -189,7 +195,7 @@ img.ajax-loader
   position: relative
   i
     position: absolute
-    right: 0
+    left: rem(20)
     top: rem(-40)
     font-style: normal
     font-weight: 400
@@ -265,3 +271,8 @@ img.ajax-loader
     span:last-child
       @include transform(translateY(-10px) rotate(-45deg))
       box-shadow: none
+.wpcf7-form label span
+  display: block !important
+
+  @include respond-to(medium)
+    display: inline-block !important
