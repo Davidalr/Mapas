@@ -27,12 +27,21 @@ Theme: Premio-nacional-teatro
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css">
 
     <?php wp_head(); ?>
+    <style>
+        <?php if( is_front_page()){
+        ?>
+        .Header img{
+            position:static
+        }
+        <?php
+        } ;?>
+    </style>
 
 </head>
 
 <body <?php body_class(); ?> data-urlBody="<?php bloginfo('url') ?>">
 
-<header class="Header">
+<header class="Header" style="<?php if( is_front_page()){ echo 'background:none';} ;?>" >
 
     <figure>
         <?php the_post_thumbnail(); ?>
@@ -49,7 +58,7 @@ Theme: Premio-nacional-teatro
     </nav>
     <ul class="Nav-social">
         <li>
-            <a href="">
+            <a href="https://www.facebook.com/MAPASMercadoCultural/" target="_blank">
                 <svg width="12px" height="23px" viewBox="0 0 12 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path
@@ -59,7 +68,7 @@ Theme: Premio-nacional-teatro
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="https://twitter.com/@MAPASmercado" target="_blank">
 
                 <svg width="26px" height="21px" viewBox="0 0 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -73,7 +82,7 @@ Theme: Premio-nacional-teatro
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="https://www.instagram.com/mapasmercadocultural/" target="_blank">
                 <svg width="24px" height="24px" viewBox="0 85 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
