@@ -1,3 +1,4 @@
+
 <?php
 /*
 Description: The Header
@@ -30,9 +31,9 @@ Theme: Premio-nacional-teatro
     <style>
         <?php if( is_front_page()){
         ?>
-        .Header img{
+        /*.Header img{
             position:static
-        }
+        }*/
         <?php
         } ;?>
     </style>
@@ -41,7 +42,7 @@ Theme: Premio-nacional-teatro
 
 <body <?php body_class(); ?> data-urlBody="<?php bloginfo('url') ?>">
 
-<header class="Header" style="<?php if( is_front_page()){ echo 'background:none';} ;?>" >
+<header class="Header" style="<?php /*if( is_front_page()){ echo 'background:none';}*/ ;?>" >
 
     <figure>
         <?php the_post_thumbnail(); ?>
